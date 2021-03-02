@@ -1,0 +1,9 @@
+@import "_variables.scss";
+
+h3 {
+    color: $blue;
+}
+
+div {
+    @include paper();
+}

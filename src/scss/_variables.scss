@@ -1,0 +1,7 @@
+$blue: rgb(62, 62, 114);
+
+@mixin paper {
+    border-radius: 3px;
+    border: 1px solid grey;
+    box-shadow: grey;
+}
