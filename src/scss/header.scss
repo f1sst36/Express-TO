@@ -1,0 +1,66 @@
+@import "_variables.scss";
+
+.header {
+    &__top {
+        background: $dark;
+        color: #fff;
+        padding: 8px 0 8px 0;
+
+        .address {
+            display: flex;
+
+            &__text {
+                margin-left: 24px;
+                align-self: center;
+            }
+        }
+
+        .work-time {
+            display: flex;
+            justify-content: flex-end;
+
+            &__text {
+                align-self: center;
+                margin-left: 24px;
+
+                &__first-gap {
+                    margin-right: 8px;
+                }
+
+                &__second-gap {
+                    margin: 0 8px 0 24px;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        background: #fff;
+        padding: 20px 0 20px 0;
+
+        .nav {
+            &__list {
+                height: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .active{
+                    border-bottom: 2px solid $orange;
+                    padding-bottom: 6px;
+                    margin-top: 8px;
+                }
+            }
+
+            &__item {
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .phone-button{
+            text-align: right;
+        }
+    }
+}

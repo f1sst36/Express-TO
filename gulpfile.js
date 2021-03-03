@@ -36,6 +36,10 @@ scss = () => {
         .pipe(dest("dist"));
 };
 
+clone = () => {
+    return src("src/**").pipe(dest("dist"));
+};
+
 clear = () => {
     return del("dist");
 };
@@ -46,9 +50,11 @@ serve = () => {
     });
 
     watch("src/**.html", series(html)).on("change", sync.reload);
+    watch("src/parts/**.html", series(html)).on("change", sync.reload);
     watch("src/scss/**.scss", series(scss)).on("change", sync.reload);
+    watch("src/images/**", series(scss)).on("change", sync.reload);
 };
 
 exports.build = series(clear, scss, html);
-exports.serve = series(clear, scss, html, serve);
+exports.serve = series(clear, clone, scss, html, serve);
 exports.clear = clear;
