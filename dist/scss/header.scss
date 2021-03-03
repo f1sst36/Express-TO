@@ -1,6 +1,8 @@
 @import "_variables.scss";
 
 .header {
+    position: sticky;
+
     &__top {
         background: $dark;
         color: #fff;

@@ -8,7 +8,7 @@ body {
     scroll-behavior: smooth;
 }
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -62,11 +62,26 @@ ul{
     padding: 10px 24px;
 }
 
-.regular-text{
+.regular-text {
     font-size: 14px;
     line-height: 20px;
 }
 
-.bold{
+.bold {
     font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 80px;
 }

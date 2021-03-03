@@ -1,0 +1,44 @@
+@import "./variables";
+
+.main-screen {
+    margin-top: 20px;
+
+    &__title {
+        width: 84%;
+        color: #fff;
+        background: $primary-gradient;
+        padding: 24px 0;
+        border-radius: 0px 16px 16px 0px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            display: block;
+            top: 0;
+            bottom: 0;
+            // width: 100%;
+            width: 4000px;
+            right: 100%;
+            margin-right: -12px;
+        }
+    }
+
+    &__record {
+        height: 100%;
+        background: $primary-gradient;
+        border-radius: 16px 16px 0px 0px;
+        text-align: center;
+    }
+
+    &__car-img {
+        position: relative;
+        left: -100px;
+        margin-top: 100px;
+    }
+
+    &__button{
+        margin-top: 56px;
+        font-size: 20px;
+    }
+}
