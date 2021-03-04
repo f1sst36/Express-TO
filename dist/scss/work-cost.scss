@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+.work-cost {
+    padding: 100px 0;
+
+    &__list {
+        margin-top: 52px;
+    }
+
+    &__item {
+        @include paper();
+        padding: 16px 24px;
+        display: flex;
+    }
+
+    &__text {
+        align-self: center;
+        margin-left: 24px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .orange-line {
+        width: 65px;
+        height: 4px;
+        background: $orange;
+        margin-top: 24px;
+    }
+}
