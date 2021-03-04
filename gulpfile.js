@@ -36,6 +36,10 @@ scss = () => {
         .pipe(dest("dist"));
 };
 
+js = () => {
+    return src("src/js/**.js").pipe(dest("dist"));
+};
+
 clone = () => {
     return src("src/**").pipe(dest("dist"));
 };
@@ -52,9 +56,10 @@ serve = () => {
     watch("src/**.html", series(html)).on("change", sync.reload);
     watch("src/parts/**.html", series(html)).on("change", sync.reload);
     watch("src/scss/**.scss", series(scss)).on("change", sync.reload);
-    watch("src/images/**", series(scss)).on("change", sync.reload);
+    // watch("src/images/**", series(clear, clone)).on("change", sync.reload);
+    // watch("src/js/**.js*", series(js)).on("change", sync.reload);
 };
 
-exports.build = series(clear, scss, html);
-exports.serve = series(clear, clone, scss, html, serve);
+exports.build = series(clear, clone, scss, html, js);
+exports.serve = series(clear, clone, scss, html, js, serve);
 exports.clear = clear;
