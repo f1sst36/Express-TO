@@ -3,11 +3,21 @@
 .work-cost {
     padding: 100px 0;
 
+    .container {
+        background-image: url("../images/footprints.png");
+        background-position: 90% center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+
     &__list {
         margin-top: 52px;
     }
 
     &__item {
+        position: relative;
+        z-index: 3;
+
         @include paper();
         padding: 16px 24px;
         margin: 12px 0;
@@ -15,7 +25,12 @@
         justify-content: space-between;
     }
 
+    &__wrapper {
+        display: flex;
+    }
+
     &__text {
+        width: 80%;
         align-self: center;
         margin-left: 24px;
         font-size: 18px;
@@ -23,8 +38,116 @@
         line-height: 26px;
     }
 
-    &__triangle{
+    &__triangle {
         justify-self: end;
+    }
+
+    &__car-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__car {
+        position: relative;
+        z-index: 2;
+        width: 445px;
+        height: 868px;
+
+        background-position: center center;
+        background-image: url(../images/work-cost/car_2.png);
+        background-repeat: no-repeat;
+    }
+
+    &__point {
+        position: absolute;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        background: $blue;
+
+        .stipple {
+            // Пунктирные линии на css
+
+            // position: absolute;
+            // z-index: 1;
+            // box-sizing: border-box;
+
+            // &:before {
+            //     display: block;
+            //     content: "";
+            //     height: 200px;
+            //     width: 100%;
+            //     border-top: 2px dashed $orange;
+            //     border-left: 2px dashed $orange;
+            //     border-radius: 12px 0 0 0;
+            // }
+
+            // &:after {
+            //     display: block;
+            //     content: "";
+            //     width: 100px;
+            //     height: 20px;
+            //     margin-left: -99px;
+            //     border-right: 2px dashed $orange;
+            //     border-bottom: 2px dashed $orange;
+            //     border-radius: 0 0 12px 0;
+            // }
+
+            position: absolute;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #stipple_1 {
+            width: 340px;
+            height: 75px;
+            top: -35px;
+            left: -330px;
+            background-image: url("../images/work-cost/stipples/stipple_1.svg");
+        }
+    }
+
+    #point_1 {
+        left: calc(50% - 15px);
+        top: 6%;
+    }
+
+    #point_2 {
+        left: 17.5%;
+        top: 12.5%;
+    }
+
+    #point_3 {
+        left: calc(50% - 15px);
+        top: 19%;
+    }
+
+    #point_4 {
+        top: 26%;
+        left: 15.5%;
+    }
+
+    #point_5 {
+        left: calc(50% - 15px);
+        top: 31.5%;
+    }
+
+    #point_6 {
+        left: 39%;
+        top: 39.5%;
+    }
+
+    #point_7 {
+        top: 69%;
+        left: 15%;
+    }
+
+    #point_8 {
+        left: calc(50% - 15px);
+        top: 86%;
     }
 
     .orange-line {
