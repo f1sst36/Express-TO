@@ -111,6 +111,10 @@
   src: local(""),url("./fonts/Exo2-Bold.woff2") format("woff2"),url("./fonts/Exo2-Bold.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .primary-button,
 body {
   font-family: "Exo 2",sans-serif;
@@ -123,8 +127,16 @@ ul {
 }
 
 body {
-  scroll-behavior: smooth;
   color: #646464;
+}
+
+a {
+  color: #646464!important;
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }
 
 ul {
@@ -392,6 +404,9 @@ h4 {
 }
 
 .services {
+  margin-top: -55px;
+  background-clip: padding-box;
+  border-top: 55px solid #fff;
   background: #f9f9f9;
   padding: 100px 0 20px;
 }
@@ -416,6 +431,9 @@ h4 {
 }
 
 .stocks {
+  margin-top: -55px;
+  background-clip: padding-box;
+  border-top: 55px solid #fff;
   padding: 84px 0 40px;
   background: #f9f9f9;
 }
@@ -491,6 +509,9 @@ h4 {
 }
 
 .work-cost {
+  border-top: 55px solid transparent;
+  margin-top: -55px;
+  background-clip: padding-box;
   padding: 100px 0 50px;
 }
 
