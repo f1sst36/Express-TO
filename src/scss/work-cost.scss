@@ -7,9 +7,13 @@
         margin-top: 52px;
     }
 
+    &__item-wrapper {
+        position: relative;
+    }
+
     &__item {
         position: relative;
-        z-index: 3;
+        z-index: 4;
 
         @include paper();
         padding: 16px 24px;

@@ -9,19 +9,24 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="work-cost__list">
-                    <div class="work-cost__item">
-                        <div class="work-cost__wrapper">
-                            <img src="../images/work-cost/loupe.svg" alt="Лупа" /><span
-                                class="work-cost__text"
-                                >Визуальный осмотр и диагностика</span
-                            >
+                    <div style="position: relative;">
+                        <div class="work-cost__item" id="work-cost__item-1">
+                            <div class="work-cost__wrapper">
+                                <img src="../images/work-cost/loupe.svg" alt="Лупа" /><span
+                                    class="work-cost__text"
+                                    >Визуальный осмотр и диагностика</span
+                                >
+                            </div>
+                            <img
+                                src="../images/work-cost/triangle.svg"
+                                class="work-cost__triangle"
+                                alt="Указатель"
+                            />
+                            
                         </div>
-                        <img
-                            src="../images/work-cost/triangle.svg"
-                            class="work-cost__triangle"
-                            alt="Указатель"
-                        />
+                        @@include('../modal/prices/prices-modal-1.html')
                     </div>
+                    
                     <div class="work-cost__item">
                         <div class="work-cost__wrapper">
                             <img
@@ -147,6 +152,4 @@
             </div>
         </div>
     </div>
-
-    @@include('../modal/prices-modal.html')
 </section>
