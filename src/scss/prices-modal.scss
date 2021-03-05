@@ -1,0 +1,53 @@
+@import "./variables";
+
+.prices-modal {
+    @include paper();
+    box-shadow: 4px 3px 8px rgba(0,0,0,.15);
+    width: fit-content;
+    padding: 12px 24px;
+    position: relative;
+    max-width: 540px;
+
+    margin: auto;
+
+    &:before {
+        content: "";
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 0px;
+        height: 24px;
+        width: 30px;
+        border-radius: 0 0 8px 0;
+        box-shadow: inset -3px -3px 10px -5px rgba(0,0,0,.15)
+    }
+
+    &:after {
+        content: "";
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: -30px;
+        height: calc(100% - 24px - 26px);
+        width: 30px;
+        border-radius: 0 8px 0 0;
+        box-shadow: inset -3px 3px 10px -5px rgba(0,0,0,.15)
+    }
+
+    &__item {
+        display: flex;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 12px 0;
+
+        &__price {
+            width: 90px;
+            color: $orange;
+            font-weight: 700;
+            padding-right: 12px;
+            white-space: nowrap;
+        }
+    }
+}

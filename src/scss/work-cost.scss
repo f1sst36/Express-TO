@@ -3,13 +3,6 @@
 .work-cost {
     padding: 100px 0;
 
-    .container {
-        background-image: url("../images/footprints.png");
-        background-position: 90% center;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-    }
-
     &__list {
         margin-top: 52px;
     }
@@ -69,7 +62,6 @@
 
         .stipple {
             // Пунктирные линии на css
-
             // position: absolute;
             // z-index: 1;
             // box-sizing: border-box;
@@ -101,12 +93,69 @@
             background-repeat: no-repeat;
         }
 
-        #stipple_1 {
+        .stipple_1 {
             width: 340px;
             height: 75px;
             top: -35px;
             left: -330px;
             background-image: url("../images/work-cost/stipples/stipple_1.svg");
+        }
+
+        .stipple_2 {
+            width: 340px;
+            height: 70px;
+            top: 10px;
+            left: -190px;
+            background-image: url("../images/work-cost/stipples/stipple_2.svg");
+        }
+
+        .stipple_3 {
+            width: 360px;
+            height: 105px;
+            top: 10px;
+            left: -320px;
+            background-image: url("../images/work-cost/stipples/stipple_3.svg");
+            transform: scaleX(1.1);
+        }
+
+        .stipple_4 {
+            width: 205px;
+            height: 140px;
+            top: 10px;
+            left: -200px;
+            background-image: url("../images/work-cost/stipples/stipple_4.svg");
+        }
+
+        .stipple_5 {
+            width: 340px;
+            height: 188px;
+            top: 10px;
+            left: -333px;
+            background-image: url("../images/work-cost/stipples/stipple_5.svg");
+        }
+
+        .stipple_6 {
+            width: 315px;
+            height: 215px;
+            top: 8px;
+            left: -305px;
+            background-image: url("../images/work-cost/stipples/stipple_6.svg");
+        }
+
+        .stipple_7 {
+            width: 205px;
+            height: 58px;
+            top: 10px;
+            left: -210px;
+            background-image: url("../images/work-cost/stipples/stipple_7.svg");
+        }
+
+        .stipple_8 {
+            width: 346px;
+            height: 2px;
+            top: 9px;
+            left: -351px;
+            background-image: url("../images/work-cost/stipples/stipple_8.svg");
         }
     }
 
