@@ -4,16 +4,16 @@
     @include paper();
     position: absolute;
     z-index: 3;
-    // left: 568px;
-    // top: 58px;
+    left: 568px;
+    top: 6px;
     box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.15);
     width: fit-content;
     padding: 12px 24px;
     max-width: 540px;
 
-    // visibility: hidden;
-    // opacity: 0;
-    // transform: translateX(-50px);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50px);
 
     transition: 0.3s;
 
@@ -43,10 +43,6 @@
         box-shadow: inset -3px 3px 10px -5px rgba(0, 0, 0, 0.15);
     }
 
-    // &__body{
-    //     padding-left: 24px;
-    // }
-
     &__item {
         display: flex;
         font-size: 18px;
@@ -54,12 +50,21 @@
         margin: 12px 0;
 
         &__price {
-            width: 90px;
+            min-width: 90px;
             color: $orange;
             font-weight: 700;
             padding-right: 12px;
             white-space: nowrap;
         }
+    }
+
+    &__hook {
+        position: absolute;
+        width: 35px;
+        height: 23px;
+        background: #fff;
+        left: -34px;
+        top: 25px;
     }
 }
 

@@ -1,10 +1,14 @@
 @import "_variables.scss";
 
 .work-cost {
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 
     &__list {
         margin-top: 52px;
+    }
+
+    &__item-wrapper {
+        position: relative;
     }
 
     &__item {
@@ -197,12 +201,5 @@
     #point_8 {
         left: calc(50% - 15px);
         top: 86%;
-    }
-
-    .orange-line {
-        width: 65px;
-        height: 4px;
-        background: $orange;
-        margin-top: 24px;
     }
 }
