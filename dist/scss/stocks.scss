@@ -6,11 +6,14 @@
 
     &__slider {
         margin-top: 52px;
+        padding-bottom: 20px;
+        display: flex;
 
         &__item {
             @include paper();
             padding: 32px;
             min-height: 324px;
+            max-width: 540px;
 
             &__title {
                 background: $primary-gradient;

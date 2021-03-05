@@ -7,6 +7,7 @@ const del = require("del");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const sync = require("browser-sync").create();
+const modifyCssUrls = require("gulp-modify-css-urls");
 
 html = () => {
     return src("src/**.html")
@@ -33,6 +34,14 @@ scss = () => {
         )
         .pipe(csso())
         .pipe(concat("index.css"))
+        .pipe(
+            modifyCssUrls({
+                modify(url) {
+                    // Заменяет ../abc/abc на ./abc/abc
+                    return url.slice(1);
+                },
+            })
+        )
         .pipe(dest("dist"));
 };
 
