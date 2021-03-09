@@ -1,6 +1,9 @@
 @import "_variables.scss";
 
 .services {
+    @include padding-for-anchor();
+    border-top: 55px solid #fff;
+
     background: $light-grey;
     padding: 100px 0 20px 0;
 

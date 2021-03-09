@@ -4,7 +4,6 @@ var slider = tns({
     controls: false,
     nav: false,
     loop: false,
-    // "center": true,
     autoplayButtonOutput: false,
     speed: 300,
     slideBy: 2,
@@ -13,11 +12,10 @@ var slider = tns({
     autoplayResetOnVisibility: false,
     mouseDrag: true,
     rewind: true,
+    gutter: 30,
     responsive: {
         0: {
-            items: 3,
+            items: 2,
         },
     },
 });
-
-// Slick slider

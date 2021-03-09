@@ -7,6 +7,16 @@
     padding: 84px 0 40px 0;
     background: $light-grey;
 
+    .tns-ovh{
+        overflow: visible;
+    }
+
+    .tns-item{
+        &:focus{
+            outline: none;
+        }
+    }
+
     &__slider {
         margin-top: 52px;
         padding-bottom: 20px;
@@ -17,6 +27,8 @@
             padding: 32px;
             min-height: 324px;
             max-width: 540px;
+
+            user-select: none;
 
             &__title {
                 background: $primary-gradient;
