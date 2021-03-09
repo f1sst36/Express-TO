@@ -1,0 +1,109 @@
+@import "./variables";
+
+.feedback-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(1, 1, 1, 0.25);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+
+    &__form {
+        background: url("../images/feedback/feedback-form-bg.png") no-repeat left,
+            url("../images/feedback/feedback-form-bg-2.png") no-repeat right, #fff;
+        background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position-x: right;
+
+        max-width: 730px;
+        min-width: 530px;
+        padding: 48px 64px 84px 64px;
+        border-radius: 16px;
+        color: $dark;
+        position: relative;
+        margin: 0 20px;
+
+        transition: 0.3s;
+
+        transform: translateY(-50px);
+
+        &__cross {
+            position: absolute;
+            right: 32px;
+            top: 32px;
+            cursor: pointer;
+        }
+
+        &__title {
+            color: $orange;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 28px;
+            margin: 24px 0 40px 0;
+        }
+
+        .text-field {
+            margin-bottom: 16px;
+
+            &__label {
+                display: block;
+                color: $orange;
+                font-size: 14px;
+                line-height: 28px;
+                font-weight: 700;
+            }
+
+            &__input {
+                width: 100%;
+                background: #fff;
+                border: 1px solid $blue;
+                border-radius: 3px;
+                padding: 12px 18px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &__button {
+            font-size: 16px !important;
+        }
+
+        &__agreement {
+            margin-left: 40px;
+            color: $middle-grey;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 36px;
+        }
+    }
+}
+
+.feedback-modal__active {
+    visibility: visible;
+    opacity: 1;
+
+    .feedback-modal__form {
+        transform: translateY(0);
+    }
+}

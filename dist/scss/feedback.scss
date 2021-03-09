@@ -1,0 +1,42 @@
+@import "./variables";
+
+.feedback {
+    background: linear-gradient(to bottom, $light-grey 50%, #fff 50%);
+
+    &__wrapper {
+        background: $primary-gradient;
+        border-radius: 16px;
+       
+        padding: 20px;
+    }
+
+    &__block {
+        background-image: url("../images/feedback/feedback-bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 60px;
+        
+        position: relative;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 28px;
+        color: #fff;
+        margin: 24px 0 48px 0;
+    }
+
+    &__button{
+        font-size: 16px !important;
+    }
+
+    &__phone{
+        position: absolute;
+
+        top: -180px;
+    }
+}
