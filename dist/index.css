@@ -278,7 +278,6 @@ ul {
 }
 
 body {
-  overflow-x: hidden;
   color: #646464;
 }
 
@@ -547,9 +546,6 @@ h4 {
 }
 
 .services {
-  margin-top: -55px;
-  background-clip: padding-box;
-  border-top: 55px solid #fff;
   background: #f9f9f9;
   padding: 100px 0 20px;
 }
@@ -574,11 +570,9 @@ h4 {
 }
 
 .stocks {
-  margin-top: -55px;
-  background-clip: padding-box;
-  border-top: 55px solid #fff;
   padding: 84px 0 144px;
   background: #f9f9f9;
+  overflow: hidden;
 }
 
 .stocks .tns-ovh {
@@ -664,9 +658,6 @@ h4 {
 }
 
 .work-cost {
-  border-top: 55px solid transparent;
-  margin-top: -55px;
-  background-clip: padding-box;
   padding: 100px 0 50px;
 }
 
@@ -808,7 +799,7 @@ h4 {
 
 .work-cost__point .stipple_8 {
   width: 346px;
-  height: 2px;
+  height: 20px;
   top: 9px;
   left: -351px;
   background-image: url("./images/work-cost/stipples/stipple_8.svg");

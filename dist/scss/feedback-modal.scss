@@ -21,11 +21,8 @@
     transition: 0.3s;
 
     &__form {
-        background: url("../images/feedback/feedback-form-bg.png") no-repeat left,
-            url("../images/feedback/feedback-form-bg-2.png") no-repeat right, #fff;
+        background: url("../images/feedback/feedback-modal-bg.png") no-repeat, #fff;
         background-size: contain;
-        // background-repeat: no-repeat;
-        // background-position-x: right;
 
         max-width: 730px;
         min-width: 530px;
