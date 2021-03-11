@@ -4,15 +4,17 @@ const modalsHTMLCollection = document.getElementsByClassName("prices-modal");
 const items = [...itemsHTMLCollection];
 const modals = [...modalsHTMLCollection];
 
+const lg = 1199;
+
 items.forEach((item, index) => {
     item.addEventListener("mouseover", () => {
-        modals[index].classList.add("active");
+        if (window.innerWidth > lg) modals[index].classList.add("active");
     });
 });
 
 items.forEach((item, index) => {
     item.addEventListener("mouseout", () => {
-        modals[index].classList.remove("active");
+        if (window.innerWidth > lg) modals[index].classList.remove("active");
     });
 });
 
@@ -20,7 +22,9 @@ items.forEach((item, index) => {
 
 items.forEach((item, index) => {
     item.addEventListener("pointerup", () => {
-        if (modals[index].classList.contains("active")) modals[index].classList.remove("active");
-        else modals[index].classList.add("active");
+        if (window.innerWidth <= lg)
+            if (modals[index].classList.contains("active"))
+                modals[index].classList.remove("active");
+            else modals[index].classList.add("active");
     });
 });
