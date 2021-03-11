@@ -3,12 +3,26 @@
 .main-screen {
     margin-top: $header-height;
 
+    @media (max-width: $md) {
+        margin-top: calc(72px + 24px);
+    }
+
     &__title {
         width: 84%;
         color: #fff;
         background: $primary-gradient;
         padding: 24px 0;
         border-radius: 0px 16px 16px 0px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    
+        @media (max-width: $lg) {
+            width: 100%;
+        }
+
+        @media (max-width: $sm) {
+            width: 100%;
+            padding: 12px 0;
+        }
 
         &:before {
             content: "";
@@ -22,15 +36,27 @@
             width: 4000px;
             right: 100%;
             margin-right: -12px;
+
+            @media (max-width: $sm) {
+                height: 72px;
+            }
         }
     }
 
     &__subtitle {
         margin: 32px 0;
+
+        @media (max-width: $sm) {
+            margin: 16px 0 24px 0;
+        }
     }
 
     .services-list {
         width: 80%;
+
+        @media (max-width: $sm) {
+            width: 100%;
+        }
 
         &__item {
             display: flex;
@@ -38,10 +64,20 @@
             font-size: 20px;
             line-height: 32px;
             margin: 12px 0;
+
+            @media (max-width: $sm) {
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
 
-        &__svg{
+        &__svg {
             margin-right: 12px;
+
+            @media (max-width: $sm) {
+                transform: scale(0.7);
+                margin-right: 8px;
+            }
         }
     }
 
@@ -50,16 +86,45 @@
         background: $primary-gradient;
         border-radius: 16px 16px 0px 0px;
         text-align: center;
+
+        @media (max-width: $sm) {
+            width: 80%;
+            margin: auto;
+        }
+
+        @media (max-width: $lg) {
+            margin-top: 32px;
+        }
+
     }
 
     &__car-img {
+        display: block;
         position: relative;
         left: -100px;
-        margin-top: 100px;
+        padding-top: 100px;
+
+        @media (max-width: $lg) {
+            position: unset;
+            margin: auto;
+        }
+
+        @media (max-width: $sm) {
+            position: unset;
+            width: 100%;
+            transform: scale(1.2);
+            padding-top: 36px;
+        }
     }
 
     &__button {
         margin: 56px 0 100px 0;
         font-size: 20px;
+
+        @media (max-width: $sm) {
+           padding: 10px 24px;
+           font-size: 14px;
+           margin: 40px 0 44px 0;
+        }
     }
 }

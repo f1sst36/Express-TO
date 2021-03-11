@@ -15,3 +15,12 @@ items.forEach((item, index) => {
         modals[index].classList.remove("active");
     });
 });
+
+// Mobile
+
+items.forEach((item, index) => {
+    item.addEventListener("pointerup", () => {
+        if (modals[index].classList.contains("active")) modals[index].classList.remove("active");
+        else modals[index].classList.add("active");
+    });
+});

@@ -28,5 +28,4 @@ document.addEventListener("click", (e) => {
         headerMobileMenu.classList.remove("is-opened-menu");
         burgerButton.src = burgerIconUrl;
     }
-        
 });

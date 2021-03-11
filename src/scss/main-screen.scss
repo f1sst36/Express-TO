@@ -99,13 +99,13 @@
     }
 
     &__car-img {
+        display: block;
         position: relative;
         left: -100px;
         padding-top: 100px;
 
         @media (max-width: $lg) {
             position: unset;
-            display: block;
             margin: auto;
         }
 

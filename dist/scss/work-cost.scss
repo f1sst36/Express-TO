@@ -44,6 +44,10 @@
     &__car-wrapper {
         display: flex;
         justify-content: flex-end;
+
+        @media(max-width: $lg){
+            justify-content: center;
+        }
     }
 
     &__car {
@@ -162,6 +166,19 @@
             top: 9px;
             left: -351px;
             background-image: url("../images/work-cost/stipples/stipple_8.svg");
+        }
+
+        .stipple_1,
+        .stipple_2,
+        .stipple_3,
+        .stipple_4,
+        .stipple_5,
+        .stipple_6,
+        .stipple_7,
+        .stipple_8 {
+            @media(max-width: $lg){
+                display: none;
+            }
         }
     }
 

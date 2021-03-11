@@ -8,11 +8,13 @@ $middle-grey: #949494;
 $grey: #646464;
 
 $header-height: 140px;
+$header-height-mobile: 72px;
 
 $xs: 575px;
 $sm: 767px;
 $md: 991px;
-$lg: 1090px;
+$lg: 1199px;
+$xl: 1399px;
 
 @mixin paper {
     background: #ffffff;

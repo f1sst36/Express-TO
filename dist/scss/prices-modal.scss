@@ -2,6 +2,7 @@
 
 .prices-modal {
     @include paper();
+
     position: absolute;
     z-index: 3;
     left: 568px;
@@ -17,6 +18,11 @@
     transform: translateX(-50px);
 
     transition: 0.3s;
+
+    // @media(max-width: $lg){
+    //     position: unset;
+    //     min-width: 100%;
+    // }
 
     &:before {
         content: "";

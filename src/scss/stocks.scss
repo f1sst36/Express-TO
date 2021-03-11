@@ -1,21 +1,33 @@
 @import "./variables";
 
 .stocks {
-    // @include padding-for-anchor();
-    // border-top: 55px solid #fff;
-
     padding: 84px 0 144px 0;
     background: $light-grey;
 
     overflow: hidden;
 
-    .tns-ovh{
+    @media (max-width: $sm) {
+        padding: 40px 0;
+    }
+
+    .tns-ovh {
         overflow: visible;
     }
 
-    .tns-item{
-        &:focus{
+    .tns-item {
+        @media (max-width: $sm) {
+            font-size: 12px;
+        }
+
+        &:focus {
             outline: none;
+        }
+    }
+
+    .custom-container {
+        @media (max-width: $sm) {
+            width: 90%;
+            float: left;
         }
     }
 
@@ -24,15 +36,27 @@
         padding-bottom: 20px;
         display: flex;
 
+        @media (max-width: $sm) {
+            margin-top: 24px;
+        }
+
         &__item {
             @include paper();
             padding: 32px;
             min-height: 324px;
             max-width: 540px;
+            height: 100%;
 
             user-select: none;
 
+            @media (max-width: $sm) {
+                padding: 20px;
+            }
+
             &__title {
+                display: flex;
+                align-items: center;
+
                 background: $primary-gradient;
                 border-radius: 0px 16px 16px 0px;
                 padding: 12px 32px;
@@ -42,24 +66,50 @@
                 line-height: 32px;
                 text-transform: uppercase;
                 margin-left: -32px;
+
+                @media (max-width: $sm) {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 6px 20px;
+                    min-height: 70px;
+                    margin-left: -20px;
+                }
             }
 
             &__body {
                 display: flex;
                 padding-top: 28px;
+
+                @media (max-width: $md) {
+                    padding-top: 20px;
+                }
             }
 
             &__image {
                 max-width: 150px;
                 max-height: 180px;
+
+                @media (max-width: $md) {
+                    max-width: 90px;
+                    max-height: 108px;
+                }
             }
 
             &__content {
                 margin-right: 36px;
+
+                @media (max-width: $sm) {
+                    margin-right: 12px;
+                }
             }
 
             &__text {
                 display: flex;
+                margin-bottom: 12px;
+
+                @media (max-width: $md) {
+                    flex-direction: column;
+                }
             }
 
             &__price {
@@ -69,6 +119,19 @@
                 font-size: 16px;
                 line-height: 24px;
                 white-space: nowrap;
+                border-bottom: 4px solid rgba(255, 255, 255, 0);
+
+                @media (max-width: $sm) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            &____description {
+                @media (max-width: $md) {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
             }
 
             &__stock {
@@ -77,6 +140,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 margin-top: 16px;
+
+                @media (max-width: $sm) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
         }
     }

@@ -15,7 +15,12 @@ var slider = tns({
     gutter: 30,
     responsive: {
         0: {
+            items: 1,
+            gutter: 20,
+        },
+        768: {
             items: 2,
+            gutter: 30,
         },
     },
 });
