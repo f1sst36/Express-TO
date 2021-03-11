@@ -11,6 +11,10 @@
         color: #fff;
         padding: 8px 0 8px 0;
 
+        @media (max-width: $md) {
+            display: none;
+        }
+
         .address {
             display: flex;
 
@@ -43,7 +47,17 @@
         background: #fff;
         padding: 20px 0 20px 0;
 
-        transition: box-shadow .3s ease;
+        transition: box-shadow 0.3s ease;
+
+        @media (max-width: $md) {
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .logo{
+            @media (max-width: $md) {
+                max-height: 148px;
+            }
+        }
 
         .nav {
             &__list {
@@ -65,10 +79,27 @@
                 font-weight: bold;
                 cursor: pointer;
             }
+
+            @media (max-width: $md) {
+                display: none;
+            }
         }
 
         .phone-button {
             text-align: right;
+
+            @media (max-width: $md) {
+                display: none;
+            }
+        }
+
+        .mobile-menu-icon-wrapper{
+            display: none;
+            text-align: right;
+
+            @media (max-width: $md) {
+                display: block;
+            }
         }
     }
 

@@ -1,11 +1,13 @@
 @import "./variables";
 
 .stocks {
-    @include padding-for-anchor();
-    border-top: 55px solid #fff;
+    // @include padding-for-anchor();
+    // border-top: 55px solid #fff;
 
     padding: 84px 0 144px 0;
     background: $light-grey;
+
+    overflow: hidden;
 
     .tns-ovh{
         overflow: visible;

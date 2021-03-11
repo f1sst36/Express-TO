@@ -9,6 +9,11 @@ $grey: #646464;
 
 $header-height: 140px;
 
+$xs: 575px;
+$sm: 767px;
+$md: 991px;
+$lg: 1090px;
+
 @mixin paper {
     background: #ffffff;
     border-radius: 8px;

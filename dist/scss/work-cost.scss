@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 .work-cost {
-    @include padding-for-anchor();
+    // @include padding-for-anchor();
 
     padding: 100px 0 50px 0;
 
@@ -158,7 +158,7 @@
 
         .stipple_8 {
             width: 346px;
-            height: 2px;
+            height: 20px;
             top: 9px;
             left: -351px;
             background-image: url("../images/work-cost/stipples/stipple_8.svg");

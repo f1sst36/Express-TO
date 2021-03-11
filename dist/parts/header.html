@@ -2,7 +2,7 @@
     <div class="header__top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-xs-6">
                     <div class="address">
                         <img src="./images/header/address-sign.svg" alt="Адрес" />
                         <span class="regular-text address__text"
@@ -10,7 +10,7 @@
                         >
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-xs-6">
                     <div class="work-time">
                         <img src="./images/header/clock.svg" alt="Часы" />
                         <div class="work-time__text">
@@ -27,8 +27,17 @@
     <div class="header__bottom" id="header-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3"><img src="./images/logo.svg" alt="Лого" /></div>
-                <div class="col-lg-6">
+                <div class="col-md-3 col-sm-6">
+                    <picture>
+                        <!-- <source srcset="./images/logo.svg" media="(min-width: 992px)" /> -->
+                        <source srcset="./images/mobile-logo.svg" media="(max-width: 991px)" />
+                        <img src="./images/logo.svg" class="logo" alt="Лого" />
+                    </picture>
+                </div>
+                <div class="col-sm-6 mobile-menu-icon-wrapper">
+                    <img src="./images/header/burger-icon.svg" alt="Иконка меню" />
+                </div>
+                <div class="col-md-6">
                     <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item active"><a href="#services">Услуги</a></li>
@@ -39,7 +48,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-md-3">
                     <div class="phone-button">
                         <button class="primary-button small-button">+7 978 556 50 60</button>
                     </div>
