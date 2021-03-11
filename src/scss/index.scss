@@ -3,6 +3,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
     padding: 0;
     font-family: "Exo 2", sans-serif;
     color: $grey;
-    overflow-x: hidden;
 }
 
 a {
@@ -111,6 +111,11 @@ h2 {
     font-weight: 700;
     font-size: 42px;
     line-height: 64px;
+
+    @media (max-width: $sm) {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 h3 {
@@ -149,8 +154,8 @@ h4 {
 }
 
 @media (max-width: $sm) {
-   .container{
-       padding-left: 20px;
-       padding-right: 20px;
-   }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

@@ -1,13 +1,13 @@
 @import "./variables";
 
 .stocks {
-    padding: 84px 0 144px 0;
+    padding-top: 84px;
     background: $light-grey;
 
     overflow: hidden;
 
     @media (max-width: $sm) {
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     .tns-ovh {
