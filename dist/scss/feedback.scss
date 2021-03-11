@@ -2,12 +2,22 @@
 
 .feedback {
     background: linear-gradient(to bottom, $light-grey 50%, #fff 50%);
+    padding: 144px 0 64px 0;
+    overflow: hidden;
+
+    @media (max-width: $sm) {
+        padding: 64px 0 64px 0;
+    }
 
     &__wrapper {
         background: $primary-gradient;
         border-radius: 16px;
-       
+
         padding: 20px;
+
+        @media (max-width: $sm) {
+            padding: 10px;
+        }
     }
 
     &__block {
@@ -15,8 +25,13 @@
         background-size: contain;
         background-repeat: no-repeat;
         padding: 60px;
-        
+
         position: relative;
+
+        @media (max-width: $sm) {
+            padding: 10px;
+            background-position-y: center;
+        }
     }
 
     &__title {
@@ -28,15 +43,42 @@
         line-height: 28px;
         color: #fff;
         margin: 24px 0 48px 0;
+
+        @media (max-width: $sm) {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 12px 0 24px 0;
+        }
     }
 
-    &__button{
+    &__button {
         font-size: 16px !important;
+
+        @media (max-width: $sm) {
+            padding: 10px 24px !important;
+            font-size: 14px !important; 
+        }
     }
 
-    &__phone{
+    &__phone {
         position: absolute;
 
         top: -180px;
+
+        @media (max-width: $md) {
+            top: -175px;
+            left: -165px;
+        }
+
+        @media (max-width: $sm) {
+            transform: scale(.55);
+            top: -220px;
+            left: -195px;
+        }
+
+        @media (max-width: $xs) {
+            top: -185px;
+            left: -195px;
+        }
     }
 }

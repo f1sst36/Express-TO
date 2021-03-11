@@ -1,12 +1,18 @@
 @import "_variables.scss";
 
 .work-cost {
-    // @include padding-for-anchor();
-
     padding: 100px 0 50px 0;
+
+    @media(max-width: $sm){
+        padding: 40px 0 0 0;
+    }
 
     &__list {
         margin-top: 52px;
+
+        @media(max-width: $sm){
+            margin-top: 24px;
+        }
     }
 
     &__item-wrapper {
@@ -22,10 +28,20 @@
         margin: 12px 0;
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: $sm){
+            padding: 10px 20px 10px 6px;
+        }
     }
 
     &__wrapper {
         display: flex;
+
+        img{
+            @media(max-width: $sm){
+                transform: scale(.6);
+            }
+        }
     }
 
     &__text {
@@ -35,10 +51,21 @@
         font-size: 18px;
         font-weight: 600;
         line-height: 26px;
+
+        @media(max-width: $sm){
+            margin-left: 12px;
+            font-size: 14px;
+            line-height: 20px;
+            width: 70%;
+        }
     }
 
     &__triangle {
         justify-self: end;
+
+        @media(max-width: $lg){
+            transform: rotate(90deg);
+        }
     }
 
     &__car-wrapper {
@@ -59,6 +86,10 @@
         background-position: center center;
         background-image: url(../images/work-cost/car_2.png);
         background-repeat: no-repeat;
+
+        @media(max-width: $sm){
+            margin: 0 -20px;
+        }
     }
 
     &__point {

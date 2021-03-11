@@ -113,6 +113,8 @@
     }
 
     &__mobile {
+        display: none;
+        // height: 0;
         transform: translateY(-100px);
         visibility: hidden;
         opacity: 0;
@@ -187,6 +189,9 @@
     }
 
     .is-opened-menu {
+        display: block;
+        // min-height: 366px;
+        // max-height: 400px;
         transform: translateY(0);
         visibility: visible;
         opacity: 1;
