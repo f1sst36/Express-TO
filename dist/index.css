@@ -107,6 +107,14 @@
   outline: 0;
 }
 
+.feedback-modal__form .text-field .error {
+  border: 1px solid red;
+}
+
+.feedback-modal__form__error-message {
+  color: red;
+}
+
 .feedback-modal__form__button {
   font-size: 16px!important;
 }
