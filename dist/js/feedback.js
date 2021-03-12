@@ -52,6 +52,8 @@ form.addEventListener("submit", (e) => {
     }
 
     errorMessageNode.innerHTML = "";
+    nameField.value = "";
+    phoneField.value = "";
     nameField.classList.remove("error");
     phoneField.classList.remove("error");
     modal.classList.remove("feedback-modal__active");

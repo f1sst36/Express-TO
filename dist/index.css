@@ -656,7 +656,7 @@
 
 @media (max-width:991px) {
   .header__mobile__body .phone-button {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -1767,9 +1767,9 @@ h4 {
 
 @media (max-width:575px) {
   .works__slider__button-1 {
-    border-bottom: 18px solid transparent;
-    border-top: 18px solid transparent;
-    border-right: 8px solid #524be0;
+    border-bottom: 22px solid transparent;
+    border-top: 22px solid transparent;
+    border-right: 10px solid #524be0;
   }
 }
 
@@ -1796,8 +1796,8 @@ h4 {
 
 @media (max-width:575px) {
   .works__slider__button-2 {
-    border-bottom: 18px solid transparent;
-    border-top: 18px solid transparent;
-    border-left: 8px solid #524be0;
+    border-bottom: 22px solid transparent;
+    border-top: 22px solid transparent;
+    border-left: 10px solid #524be0;
   }
 }
