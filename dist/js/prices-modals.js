@@ -22,9 +22,14 @@ items.forEach((item, index) => {
 
 items.forEach((item, index) => {
     item.addEventListener("pointerup", () => {
-        if (window.innerWidth <= lg)
+        if (window.innerWidth <= lg) {
+            if (item.classList.contains("active"))
+                item.classList.remove("active");
+            else item.classList.add("active");
+
             if (modals[index].classList.contains("active"))
                 modals[index].classList.remove("active");
             else modals[index].classList.add("active");
+        }
     });
 });

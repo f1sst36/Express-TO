@@ -1,0 +1,58 @@
+@import "./variables";
+
+.works {
+    padding: 0 0 100px 0;
+
+    &__title{
+        margin-bottom: 44px;
+    }
+
+    &__main-slider {
+        overflow: hidden;
+        height: 620px;
+    }
+
+    &__slider {
+
+        img {
+            max-height: 100px;
+            width: 100%;
+
+            &:focus{
+                outline: none !important;
+            }
+        }
+
+        &__item{
+            &:focus{
+                outline: none !important;
+            }
+        }
+
+        &__side {
+            width: 100px;
+        }
+
+        &__button-1 {
+            width: 0;
+            height: 0;
+            border-left: 26px solid transparent;
+            border-right: 26px solid transparent;
+            border-bottom: 12px solid $blue;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 0 auto 16px auto;
+        }
+
+        &__button-2 {
+            width: 0;
+            height: 0;
+            border-left: 26px solid transparent;
+            border-right: 26px solid transparent;
+            border-top: 12px solid $blue;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 16px auto 0 auto;
+        }
+    }
+}

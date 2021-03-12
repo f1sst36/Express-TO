@@ -3,14 +3,14 @@
 .work-cost {
     padding: 100px 0 50px 0;
 
-    @media(max-width: $sm){
+    @media (max-width: $sm) {
         padding: 40px 0 0 0;
     }
 
     &__list {
         margin-top: 52px;
 
-        @media(max-width: $sm){
+        @media (max-width: $sm) {
             margin-top: 24px;
         }
     }
@@ -29,7 +29,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media(max-width: $sm){
+        @media (max-width: $sm) {
             padding: 10px 20px 10px 6px;
         }
     }
@@ -37,9 +37,9 @@
     &__wrapper {
         display: flex;
 
-        img{
-            @media(max-width: $sm){
-                transform: scale(.6);
+        img {
+            @media (max-width: $sm) {
+                transform: scale(0.6);
             }
         }
     }
@@ -52,7 +52,7 @@
         font-weight: 600;
         line-height: 26px;
 
-        @media(max-width: $sm){
+        @media (max-width: $sm) {
             margin-left: 12px;
             font-size: 14px;
             line-height: 20px;
@@ -63,7 +63,9 @@
     &__triangle {
         justify-self: end;
 
-        @media(max-width: $lg){
+        transition: 0.3s;
+
+        @media (max-width: $lg) {
             transform: rotate(90deg);
         }
     }
@@ -72,7 +74,7 @@
         display: flex;
         justify-content: flex-end;
 
-        @media(max-width: $lg){
+        @media (max-width: $lg) {
             justify-content: center;
         }
     }
@@ -87,7 +89,7 @@
         background-image: url(../images/work-cost/car_2.png);
         background-repeat: no-repeat;
 
-        @media(max-width: $sm){
+        @media (max-width: $sm) {
             margin: 0 -20px;
         }
     }
@@ -207,7 +209,7 @@
         .stipple_6,
         .stipple_7,
         .stipple_8 {
-            @media(max-width: $lg){
+            @media (max-width: $lg) {
                 display: none;
             }
         }
@@ -251,5 +253,13 @@
     #point_8 {
         left: calc(50% - 15px);
         top: 86%;
+    }
+
+    .active {
+        .work-cost__triangle {
+            @media (max-width: $lg) {
+                transform: rotate(-90deg);
+            }
+        }
     }
 }
