@@ -1,13 +1,23 @@
 @import "./variables";
 
 .stocks {
-    padding-top: 84px;
+    // padding-top: 84px;
     background: $light-grey;
 
     overflow: hidden;
 
-    @media (max-width: $sm) {
-        padding-top: 40px;
+    // @media (max-width: $sm) {
+    //     padding-top: 40px;
+    // }
+
+    .custom-container {
+        @include footprints();
+
+        padding-top: 84px;
+
+        @media (max-width: $sm) {
+            padding-top: 40px;
+        }
     }
 
     .tns-ovh {
@@ -24,7 +34,7 @@
         }
     }
 
-    .custom-container {
+    .second-custom-container {
         @media (max-width: $sm) {
             width: 90%;
             float: left;

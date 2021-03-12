@@ -2,11 +2,21 @@
 
 .feedback {
     background: linear-gradient(to bottom, $light-grey 50%, #fff 50%);
-    padding: 144px 0 64px 0;
+    // padding: 144px 0 64px 0;
     overflow: hidden;
 
-    @media (max-width: $sm) {
-        padding: 64px 0 64px 0;
+    // @media (max-width: $sm) {
+    //     padding: 64px 0 64px 0;
+    // }
+
+    .custom-container {
+        @include footprints();
+
+        padding: 144px 0 64px 0;
+
+        @media (max-width: $sm) {
+            padding: 64px 20px 64px 20px;
+        }
     }
 
     &__wrapper {
@@ -56,7 +66,7 @@
 
         @media (max-width: $sm) {
             padding: 10px 24px !important;
-            font-size: 14px !important; 
+            font-size: 14px !important;
         }
     }
 
@@ -71,7 +81,7 @@
         }
 
         @media (max-width: $sm) {
-            transform: scale(.55);
+            transform: scale(0.55);
             top: -220px;
             left: -195px;
         }

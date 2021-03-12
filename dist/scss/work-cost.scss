@@ -8,15 +8,12 @@
     // }
 
     .custom-container {
-        background-image: url("../images/footprints.png");
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        background-position-x: 72%;
+        @include footprints();
 
         padding: 100px 0 50px 0;
 
         @media (max-width: $sm) {
-            padding: 40px 0 0 0;
+            padding: 40px 20px 0 20px;
         }
     }
 

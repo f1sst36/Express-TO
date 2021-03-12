@@ -30,6 +30,16 @@ document.addEventListener("click", (e) => {
     }
 });
 
+const navItemsHTMLCollection = document.getElementsByClassName("nav__item");
+const navItems = [...navItemsHTMLCollection];
+
+navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+        headerMobileMenu.classList.remove("is-opened-menu");
+        burgerButton.src = burgerIconUrl;
+    });
+});
+
 //--------------------------------------------------
 
 const services = document.getElementById("services__title");
@@ -37,9 +47,6 @@ const workCost = document.getElementById("work-cost__title");
 const stocks = document.getElementById("stocks__title");
 const works = document.getElementById("works_title");
 const contacts = document.getElementById("footer");
-
-const navItemsHTMLCollection = document.getElementsByClassName("nav__item");
-const navItems = [...navItemsHTMLCollection];
 
 const visible = (target) => {
     const targetPosition = {
