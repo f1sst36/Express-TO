@@ -646,6 +646,12 @@
   text-align: center;
 }
 
+@media (max-width:991px) {
+  .header__mobile__body .phone-button {
+    margin-top: 30px;
+  }
+}
+
 .header .is-opened-menu {
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -696,13 +702,10 @@ body {
   color: #646464;
 }
 
-a {
-  color: #646464!important;
-}
-
 a,
 a:hover {
   text-decoration: none;
+  color: unset;
 }
 
 ul {
@@ -1636,7 +1639,7 @@ h4 {
 }
 
 @media (max-width:1199px) {
-  .work-cost .active .work-cost__triangle {
+  .work-cost .active-card .work-cost__triangle {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }

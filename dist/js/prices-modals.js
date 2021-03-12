@@ -23,9 +23,9 @@ items.forEach((item, index) => {
 items.forEach((item, index) => {
     item.addEventListener("pointerup", () => {
         if (window.innerWidth <= lg) {
-            if (item.classList.contains("active"))
-                item.classList.remove("active");
-            else item.classList.add("active");
+            if (item.classList.contains("active-card"))
+                item.classList.remove("active-card");
+            else item.classList.add("active-card");
 
             if (modals[index].classList.contains("active"))
                 modals[index].classList.remove("active");
