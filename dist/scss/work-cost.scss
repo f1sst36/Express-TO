@@ -1,10 +1,23 @@
 @import "_variables.scss";
 
 .work-cost {
-    padding: 100px 0 50px 0;
+    // padding: 100px 0 50px 0;
 
-    @media (max-width: $sm) {
-        padding: 40px 0 0 0;
+    // @media (max-width: $sm) {
+    //     padding: 40px 0 0 0;
+    // }
+
+    .custom-container {
+        background-image: url("../images/footprints.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position-x: 72%;
+
+        padding: 100px 0 50px 0;
+
+        @media (max-width: $sm) {
+            padding: 40px 0 0 0;
+        }
     }
 
     &__list {
@@ -255,7 +268,7 @@
         top: 86%;
     }
 
-    .active {
+    .active-card {
         .work-cost__triangle {
             @media (max-width: $lg) {
                 transform: rotate(-90deg);

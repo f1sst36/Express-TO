@@ -1,10 +1,20 @@
 @import "_variables.scss";
 
 .work-cost {
-    padding: 100px 0 50px 0;
+    // padding: 100px 0 50px 0;
 
-    @media (max-width: $sm) {
-        padding: 40px 0 0 0;
+    // @media (max-width: $sm) {
+    //     padding: 40px 0 0 0;
+    // }
+
+    .custom-container {
+        @include footprints();
+
+        padding: 100px 0 50px 0;
+
+        @media (max-width: $sm) {
+            padding: 40px 20px 0 20px;
+        }
     }
 
     &__list {

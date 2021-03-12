@@ -96,6 +96,14 @@
                     outline: none;
                 }
             }
+
+            .error{
+                border: 1px solid red;
+            }
+        }
+
+        &__error-message{
+            color: red;
         }
 
         &__button {

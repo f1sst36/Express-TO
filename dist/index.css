@@ -163,13 +163,26 @@
 .feedback {
   background: -webkit-gradient(linear,left top,left bottom,color-stop(50%,#f9f9f9),color-stop(50%,#fff));
   background: linear-gradient(to bottom,#f9f9f9 50%,#fff 50%);
-  padding: 144px 0 64px;
   overflow: hidden;
 }
 
+.feedback .custom-container {
+  background-image: url("./images/footprints.png");
+  background-repeat: no-repeat;
+  background-size: 255px 100%;
+  background-position-x: 90%;
+  padding: 144px 0 64px;
+}
+
+@media (max-width:1199px) {
+  .feedback .custom-container {
+    background-image: none;
+  }
+}
+
 @media (max-width:767px) {
-  .feedback {
-    padding: 64px 0;
+  .feedback .custom-container {
+    padding: 64px 20px;
   }
 }
 
@@ -1165,12 +1178,25 @@ h4 {
 
 .services {
   background: #f9f9f9;
+}
+
+.services .custom-container {
+  background-image: url("./images/footprints.png");
+  background-repeat: no-repeat;
+  background-size: 255px 100%;
+  background-position-x: 90%;
   padding: 100px 0 20px;
 }
 
+@media (max-width:1199px) {
+  .services .custom-container {
+    background-image: none;
+  }
+}
+
 @media (max-width:767px) {
-  .services {
-    padding: 40px 0 10px;
+  .services .custom-container {
+    padding: 40px 20px 10px;
   }
 }
 
@@ -1200,13 +1226,26 @@ h4 {
 }
 
 .stocks {
-  padding-top: 84px;
   background: #f9f9f9;
   overflow: hidden;
 }
 
+.stocks .custom-container {
+  background-image: url("./images/footprints.png");
+  background-repeat: no-repeat;
+  background-size: 255px 100%;
+  background-position-x: 90%;
+  padding-top: 84px;
+}
+
+@media (max-width:1199px) {
+  .stocks .custom-container {
+    background-image: none;
+  }
+}
+
 @media (max-width:767px) {
-  .stocks {
+  .stocks .custom-container {
     padding-top: 40px;
   }
 }
@@ -1226,7 +1265,7 @@ h4 {
 }
 
 @media (max-width:767px) {
-  .stocks .custom-container {
+  .stocks .second-custom-container {
     width: 90%;
     float: left;
   }
@@ -1386,13 +1425,23 @@ h4 {
   }
 }
 
-.work-cost {
+.work-cost .custom-container {
+  background-image: url("./images/footprints.png");
+  background-repeat: no-repeat;
+  background-size: 255px 100%;
+  background-position-x: 90%;
   padding: 100px 0 50px;
 }
 
+@media (max-width:1199px) {
+  .work-cost .custom-container {
+    background-image: none;
+  }
+}
+
 @media (max-width:767px) {
-  .work-cost {
-    padding: 40px 0 0;
+  .work-cost .custom-container {
+    padding: 40px 20px 0;
   }
 }
 
@@ -1653,13 +1702,23 @@ h4 {
   }
 }
 
-.works {
+.works .custom-container {
+  background-image: url("./images/footprints.png");
+  background-repeat: no-repeat;
+  background-size: 255px 100%;
+  background-position-x: 90%;
   padding: 0 0 100px;
 }
 
+@media (max-width:1199px) {
+  .works .custom-container {
+    background-image: none;
+  }
+}
+
 @media (max-width:767px) {
-  .works {
-    padding: 0 0 40px;
+  .works .custom-container {
+    padding: 0 20px 40px;
   }
 }
 

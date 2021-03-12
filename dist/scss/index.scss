@@ -15,10 +15,11 @@ body {
 
 a {
     text-decoration: none;
-    color: $grey !important;
+    color: unset;
 
     &:hover {
         text-decoration: none;
+        color: unset;
     }
 }
 

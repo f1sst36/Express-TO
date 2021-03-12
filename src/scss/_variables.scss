@@ -10,6 +10,8 @@ $grey: #646464;
 $header-height: 140px;
 $header-height-mobile: 72px;
 
+$footprints-position: 90%;
+
 $xs: 575px;
 $sm: 767px;
 $md: 991px;
@@ -27,4 +29,15 @@ $xl: 1399px;
     margin-top: -55px;
 
     background-clip: padding-box;
+}
+
+@mixin footprints {
+    background-image: url("../images/footprints.png");
+    background-repeat: no-repeat;
+    background-size: 255px 100%;
+    background-position-x: $footprints-position;
+
+    @media (max-width: $lg) {
+        background-image: none;
+    }
 }
