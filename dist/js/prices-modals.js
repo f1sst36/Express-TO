@@ -21,7 +21,7 @@ items.forEach((item, index) => {
 // Mobile
 
 items.forEach((item, index) => {
-    item.addEventListener("pointerup", () => {
+    item.addEventListener("click", () => {
         if (window.innerWidth <= lg) {
             if (item.classList.contains("active-card"))
                 item.classList.remove("active-card");
