@@ -1021,6 +1021,8 @@ h4 {
 }
 
 .main-screen .services-list__svg {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   margin-right: 12px;
 }
 
