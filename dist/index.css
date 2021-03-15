@@ -273,6 +273,18 @@
   }
 }
 
+@media (max-width:575px) {
+  .feedback__description {
+    width: 80%;
+  }
+}
+
+@media (max-width:480px) {
+  .feedback__description {
+    width: unset;
+  }
+}
+
 .feedback__button {
   position: relative;
   z-index: 1;

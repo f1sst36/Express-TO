@@ -63,6 +63,14 @@
             line-height: 20px;
             margin: 12px 0 24px 0;
         }
+
+        @media (max-width: $xs) {
+            width: 80%;
+        }
+
+        @media (max-width: 480px) {
+            width: unset;
+        }
     }
 
     &__button {
