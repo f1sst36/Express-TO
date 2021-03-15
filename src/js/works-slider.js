@@ -72,8 +72,6 @@ let isBelowMd = window.innerWidth <= 991;
 
 window.addEventListener("resize", () => {
     if (window.innerWidth <= 991 && !isBelowMd) {
-        console.log("rebuild");
-
         worksSlider.destroy();
         worksSlider = tns(buildTNSSlider());
 
@@ -83,8 +81,6 @@ window.addEventListener("resize", () => {
     }
 
     if (window.innerWidth > 991 && isBelowMd) {
-        console.log("rebuild 2");
-
         worksSlider.destroy();
         worksSlider = tns(buildTNSSlider());
 
@@ -104,8 +100,6 @@ loupeButton.addEventListener("click", () => {
     const img = info.slideItems[info.index].children[0].cloneNode();
     img.id = "big-image";
     imageModal.append(img);
-
-    console.log(img);
 });
 
 imageModal.addEventListener("click", (e) => {
@@ -114,5 +108,4 @@ imageModal.addEventListener("click", (e) => {
         imageModal.classList.remove("big-image-modal__active");
         // imageModal.innerHTML = "";
     }
-        
 });
