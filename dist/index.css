@@ -930,12 +930,12 @@ h4 {
 }
 
 .main-screen {
-  margin-top: 140px;
+  padding-top: 140px;
 }
 
 @media (max-width:991px) {
   .main-screen {
-    margin-top: calc(72px + 24px);
+    padding-top: calc(72px + 24px);
   }
 }
 
@@ -1597,6 +1597,7 @@ h4 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    display: none;
   }
 }
 

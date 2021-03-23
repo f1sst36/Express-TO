@@ -68,6 +68,12 @@ const setActiveNavItem = (href) => {
     });
 };
 
+const removeAllActive = () => {
+    navItems.forEach((item) => {
+        item.classList.remove("active-nav-item");
+    });
+};
+
 window.addEventListener("scroll", function () {
     if (visible(services)) {
         setActiveNavItem("#services");
@@ -79,5 +85,7 @@ window.addEventListener("scroll", function () {
         setActiveNavItem("#works");
     } else if (visible(contacts)) {
         setActiveNavItem("#footer");
+    } else {
+        removeAllActive();
     }
 });
