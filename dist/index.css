@@ -1508,6 +1508,7 @@ h4 {
 @media (max-width:767px) {
   .work-cost__list {
     margin-top: 24px;
+    padding-bottom: 40px;
   }
 }
 
