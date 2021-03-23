@@ -45,6 +45,11 @@
 
     &__subtitle {
         margin: 32px 0;
+        width: 80%;
+
+        @media (max-width: $lg) {
+            width: 100%;
+        }
 
         @media (max-width: $sm) {
             margin: 16px 0 24px 0;

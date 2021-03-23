@@ -983,6 +983,13 @@ h4 {
 
 .main-screen__subtitle {
   margin: 32px 0;
+  width: 80%;
+}
+
+@media (max-width:1199px) {
+  .main-screen__subtitle {
+    width: 100%;
+  }
 }
 
 @media (max-width:767px) {
