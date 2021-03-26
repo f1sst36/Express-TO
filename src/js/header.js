@@ -74,7 +74,12 @@ const removeAllActive = () => {
     });
 };
 
-window.addEventListener("scroll", function () {
+let ticking = false;
+const delay = 100;
+
+window.addEventListener("scroll", () => {
+    if (ticking) return;
+
     if (visible(services)) {
         setActiveNavItem("#services");
     } else if (visible(workCost)) {
@@ -88,4 +93,9 @@ window.addEventListener("scroll", function () {
     } else {
         removeAllActive();
     }
+
+    ticking = true;
+    setTimeout(() => {
+        ticking = false;
+    }, delay);
 });

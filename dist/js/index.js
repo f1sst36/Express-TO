@@ -134,7 +134,11 @@ var removeAllActive = function removeAllActive() {
   });
 };
 
+var ticking = false;
+var delay = 100;
 window.addEventListener("scroll", function () {
+  if (ticking) return;
+
   if (visible(services)) {
     setActiveNavItem("#services");
   } else if (visible(workCost)) {
@@ -148,6 +152,11 @@ window.addEventListener("scroll", function () {
   } else {
     removeAllActive();
   }
+
+  ticking = true;
+  setTimeout(function () {
+    ticking = false;
+  }, delay);
 });
 var itemsHTMLCollection = document.getElementsByClassName("work-cost__item-wrapper");
 var modalsHTMLCollection = document.getElementsByClassName("prices-modal");
