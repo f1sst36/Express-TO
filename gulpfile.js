@@ -8,6 +8,7 @@ const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const sync = require("browser-sync").create();
 const modifyCssUrls = require("gulp-modify-css-urls");
+const babel = require('gulp-babel');
 
 html = () => {
     return src("src/**.html")
@@ -46,7 +47,14 @@ scss = () => {
 };
 
 js = () => {
-    return src("src/js/**.js").pipe(dest("dist/js"));
+    return src("src/js/**.js")
+        .pipe(concat("index.js"))
+        .pipe(
+            babel({
+                presets: ["@babel/env"],
+            })
+        )
+        .pipe(dest("dist/js"));
 };
 
 clone = () => {

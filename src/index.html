@@ -9,30 +9,15 @@
         <link rel="stylesheet" href="libs/tiny-slider/tiny-slider.css" />
         <link rel="stylesheet" href="index.css" />
     </head>
-<body>
+    <body>
+        @@include('parts/header.html') @@include('parts/main-screen.html')
+        @@include('parts/services.html') @@include('parts/work-cost.html')
+        @@include('parts/stocks.html') @@include('modal/feedback/feedback-modal.html')
+        @@include('parts/feedback.html') @@include('modal/works/big-image-modal.html')
+        @@include('parts/works.html') @@include('parts/footer.html')
 
-@@include('parts/header.html')
+        <script src="libs/tiny-slider/tiny-slider.js"></script>
 
-@@include('parts/main-screen.html')
-@@include('parts/services.html')
-@@include('parts/work-cost.html')
-@@include('parts/stocks.html')
-
-@@include('modal/feedback/feedback-modal.html')
-@@include('parts/feedback.html')
-
-@@include('modal/works/big-image-modal.html')
-@@include('parts/works.html')
-
-@@include('parts/footer.html')
-
-<script src="libs/tiny-slider/tiny-slider.js"></script>
-
-<script src="js/header.js"></script>
-<script src="js/prices-modals.js"></script>
-<script src="js/stocks-slider.js"></script>
-<script src="js/feedback.js"></script>
-<script src="js/works-slider.js"></script>
-
-</body>
+        <script src="js/index.js"></script>
+    </body>
 </html>

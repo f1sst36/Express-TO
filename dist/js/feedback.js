@@ -31,6 +31,14 @@ const PHONE_NUMBER_REGEXP = new RegExp(
     "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$"
 );
 
+const clearForm = () => {
+    errorMessageNode.innerHTML = "";
+    nameField.value = "";
+    phoneField.value = "";
+    nameField.classList.remove("error");
+    phoneField.classList.remove("error");
+};
+
 form.addEventListener("submit", (e) => {
     if (!nameField.value || !phoneField.value) {
         if (!nameField.value) nameField.classList.add("error");
@@ -51,10 +59,6 @@ form.addEventListener("submit", (e) => {
         return;
     }
 
-    errorMessageNode.innerHTML = "";
-    nameField.value = "";
-    phoneField.value = "";
-    nameField.classList.remove("error");
-    phoneField.classList.remove("error");
+    clearForm();
     modal.classList.remove("feedback-modal__active");
 });
