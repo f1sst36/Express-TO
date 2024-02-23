@@ -935,7 +935,7 @@ h4 {
 
 @media (max-width:991px) {
   .main-screen {
-    padding-top: calc(72px + 24px);
+    padding-top: 96px;
   }
 }
 

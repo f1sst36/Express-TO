@@ -1,5 +1,5 @@
 const { src, dest, series, watch } = require("gulp");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require('sass'));
 const csso = require("gulp-csso");
 const include = require("gulp-file-include");
 const htmlmin = require("gulp-htmlmin");

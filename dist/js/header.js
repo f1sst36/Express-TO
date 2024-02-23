@@ -75,27 +75,27 @@ const removeAllActive = () => {
 };
 
 let ticking = false;
+const delay = 100;
 
 window.addEventListener("scroll", () => {
-    if (!ticking) {
-        window.requestAnimationFrame(function () {
-            if (visible(services)) {
-                setActiveNavItem("#services");
-            } else if (visible(workCost)) {
-                setActiveNavItem("#work-cost");
-            } else if (visible(stocks)) {
-                setActiveNavItem("#stocks");
-            } else if (visible(works)) {
-                setActiveNavItem("#works");
-            } else if (visible(contacts)) {
-                setActiveNavItem("#footer");
-            } else {
-                removeAllActive();
-            }
+    if (ticking) return;
 
-            ticking = false;
-        });
-
-        ticking = true;
+    if (visible(services)) {
+        setActiveNavItem("#services");
+    } else if (visible(workCost)) {
+        setActiveNavItem("#work-cost");
+    } else if (visible(stocks)) {
+        setActiveNavItem("#stocks");
+    } else if (visible(works)) {
+        setActiveNavItem("#works");
+    } else if (visible(contacts)) {
+        setActiveNavItem("#footer");
+    } else {
+        removeAllActive();
     }
+
+    ticking = true;
+    setTimeout(() => {
+        ticking = false;
+    }, delay);
 });
