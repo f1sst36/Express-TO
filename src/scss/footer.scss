@@ -49,9 +49,8 @@
         }
 
         &__logo {
-            @media (max-width: $sm) {
-                width: 150px;
-            }
+            flex-grow: 1;
+            max-width: 150px;
         }
 
         &__contacts {
@@ -59,6 +58,19 @@
 
             @media (max-width: $sm) {
                 justify-content: space-between;
+            }
+
+            &__logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+
+                &__label {
+                    font-size: 26px;
+                    line-height: 36px;
+                }
             }
 
             &__text {

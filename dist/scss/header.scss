@@ -54,6 +54,13 @@
         }
 
         &__row {
+            &__logo-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                color: $dark;
+            }
+
             @media (max-width: $md) {
                 display: flex;
             }
