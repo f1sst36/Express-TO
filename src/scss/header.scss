@@ -70,7 +70,7 @@
             &__list {
                 height: 40px;
                 display: flex;
-                justify-content: space-around;
+                gap: 32px;
                 align-items: center;
 
                 .active-nav-item {
